@@ -60,11 +60,11 @@ program.command("server")
     .requiredOption("-u, --user-name <name>", "Set user name for room")
     .action(async (str, options) => {
         console.log(Encrypt("hi", "awefawefawef", "awefawefawef"));
-        /* Server({
+        Server({
             auth: options.auth,
             roomName: str,
             userName: options.userName
-        }); */
+        });
     });
 
 program.parse();
